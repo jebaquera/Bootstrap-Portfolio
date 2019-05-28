@@ -6,19 +6,206 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Juan Baquera Portfolio Page</title>
 
-        <!-- Bootstrap CDN -->
+        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+        <style>
+        body {
+            background-color: aqua;
+            margin: 0;
+        }
 
+        h3 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 100%;
+            padding: 20px;
+            background-color: white;
+            border: 1px;
+            margin-top: 40px;
+            margin-left: auto;
+        }
+
+        .navbar {
+            background-color: white;
+            height: 100px;
+        }
+
+       .navbar-brand {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 32px;
+            font-weight: bold;
+/*          width: 300px;
+            height: 100px;
+            background-color: aquamarine; 
+            text-align: center;
+            padding-top: 10px; */
+        }
+
+        .navText {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+        }
+
+        a:active {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: bisque;
+            background-color: aqua;
+        }
+        
+        a:visited {
+            color: darkseagreen;
+        }
+        
+         /* Start of Footer styles */
+        .footer {
+        background-color: #666666;
+        height: 60px;
+        width: 100%;
+        }
+
+        .footerRule {
+        background-color: #4aaaa5;
+        height: 8px;
+        width: 100%;
+        margin-top: 60px; 
+        }
+
+        .footerText {
+        font-size: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+        padding-left: 580px;
+        padding-top: 30px;
+        color: #eee;   
+        }
+        /* End of Footer styles */
+
+
+        .col-s-6 {
+            margin-right: 30px;
+            margin-bottom: 40px;  
+        }
+
+        .col-s-12 {
+
+        }
+
+        .thumbCaption {
+            background-color: #4aaaa5;
+            color: white;
+            font-size: 18px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            padding-top: 20px;
+            float: left;
+            margin-top: 130px;
+        }
+
+        </style>
 
 
 
 
     </head>
     <body>
-   
-    
+        <!-- Nav Bar pasted from W3C -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Juan Baquera</a>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End of Nav Bar -->
 
+
+        <!-- Main Body for each page will go within this container div-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 offset-40px">
+                    <h3>About Me</h3>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-s-6">
+                    <a href="#">
+                        <img class="img img-thumbnail" src="http://placehold.it/200x200"
+                            alt="thumbnailOne"
+                            width="200px"
+                            height="200px" />
+                    </a>
+                    ThOne
+                </div>
+                <div class="col-s-6">
+                    <a href="#">
+                        <img class="img img-thumbnail" src="http://placehold.it/200x200"
+                            alt="thumbnailTwo"
+                            width="200px"
+                            height="200px" />
+                    </a>
+                    ThTwo
+                </div>
+                <div class="col-s-6">
+                    <a href="#">
+                        <img class="img img-thumbnail" src="http://placehold.it/200x200"
+                            alt="thumbnailThree"
+                            width="200px"
+                            height="200px" />
+                    </a>
+                    ThThree
+                </div>
+                <div class="col-s-6">
+                    <a href="#">
+                        <img class="img img-thumbnail" src="http://placehold.it/200x200"
+                            alt="thumbnailFour"
+                            width="200px"
+                            height="200px" />
+                    </a>
+                    ThFour
+                </div>
+                <div class="col-s-6">
+                    <a href="#">
+                        <img class="img img-thumbnail" src="http://placehold.it/200x200"
+                        alt="thumbnailFive"
+                        width="200px"
+                        height="200px" />
+                    </a>
+                    ThFive
+                </div>
+            </div>
+        </div>
+        <!-- End of Main Text container -->
+
+
+        <!-- Footer Section for each page -->
+        <div class="footer">
+            <div class="footerRule">
+            </div>
+            <div class="footerText">
+                Copyright &#169; 2019
+            </div>
+        </div>
+        <!-- End of Footer Section -->
+
+        
         <!-- jQuery and JS code for Bootstrap-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
