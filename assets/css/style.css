@@ -3,9 +3,19 @@ body {
     margin: 0; 
 }
 
-img {
+/* img {
     width: 150px;
     height: 150px;
+} */
+
+.d-block w-100 {
+    width: 100%;
+    height: 100%;
+}
+
+#carouselPortfolio {
+    width: 100%;
+    height: 100%;
 }
 
 * {
@@ -23,6 +33,9 @@ li {
     text-align: right;
 }
 
+.container {
+    margin-top: 1%;
+}
 
 .work h5 {
     position: absolute;
@@ -37,21 +50,18 @@ li {
     background: #280768;
     border-bottom: 0;
 }
-.container {
-    width: 100%;
-    padding: 20px;
-    background-color: white;
-    border: 1px;
-    margin-top: 40px;
-    margin-left: auto;
-    margin: 0 auto;
-    clear: both;
-    height: auto;
+.container-portfolio {
+    width: 40%;   
+    background-color: #E5ECF4;
+    border: 1px; 
+    margin: 0 auto;  
 }
 
 .navText {
     text-align: right;
 }
+
+
 
 .navContainer {
     width: 100%;
@@ -64,6 +74,16 @@ li {
     clear: both;
 }
 
+.navHome {
+    width: 100%;
+    padding: 20px;
+    background-color: #666666;
+    border: 1px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin: 0 auto;
+    clear: both;
+}
 
 
 
@@ -74,6 +94,8 @@ li {
 
 .navbar {
     background-color: white;
+    margin-left: 18%;
+    margin-right: 18%;
 }
 
 .navRule {
@@ -94,6 +116,18 @@ h1 {
     padding: 15px 0px 0px 50px; 
 }
 
+.navbar-brand {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    width: 290px;
+    height: 70px;
+    background-color: #280768;
+    padding: 15px 0px 0px 50px;   
+}
+
 .navText {
     color: #333666;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -111,7 +145,7 @@ a:active {
 
 a:hover {
     color: bisque;
-    background-color: aqua;
+    background-color: lightsteelblue;
 }
 
 a:visited {

@@ -10,74 +10,88 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- CSS Stylesheet -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- Google Fonts  -->
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|BioRhyme|Signika:400,700&display=swap" rel="stylesheet">  
 
     </head>
 
     <body>
         <!-- Start of Nav Bar -->
-        <div class="navContainer">
-            <div class="row">
-                <div class="col-md-2">
+        <div class="navHome">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a href="index.html"><h1>Juan Baquera</h1></a>               
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav" id="navLinks">
+                    <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="about.html">About</a>
+                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link" href="contact.html">Connect</a>
+                  </div>
                 </div>
-
-                <div class="col-md-4">            
-                    <h1>Juan Baquera</h1>
-                </div>
-                
-                <div class="col-md-4 navText">                   
-                    <p><a href="index.html">About</a> &nbsp; | &nbsp; <a href="portfolio.html">Portfolio</a> &nbsp; | &nbsp; <a href="contact.html">Contact</a></p>                  
-                </div>
-
-                <div class="col-md-2">
-                </div>
-
-                <div class="navRule">
-                </div>
-            </div>                                           
+            </nav>                                  
         </div>
         <!-- End of Nav Bar -->
 
+        <!-- Carousel -->
+    <div class="container-portfolio">
+        <div id="carouselPortfolio" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselPortfolio" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselPortfolio" data-slide-to="1"></li>
+                <li data-target="#carouselPortfolio" data-slide-to="2"></li>
+            </ol>
 
-        <!-- Main Body for each page will go within this container div-->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 offset-40px">
-                    <h3>About Me</h3>
-                    <hr>
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="homework0">
+                    <img class="d-block w-100" src="./assets/images/word-guess-game.png" alt="First slide" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>True Texan – Word Guess Game</h5>
+                        <p>project work utilizing html, css, and js</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-2">
-                    <img class="img img-thumbnail" src="./assets/images/JB-Bio-pic.png"
-                    alt="Photo of Juan Baquera"
-                    width="300px"
-                    height="300px" />
+
+                <div class="carousel-item" id="homework1">
+                    <img class="d-block w-100" src="./assets/images/crystals-collector-game.png" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Crystals Collector Game</h5>
+                        <p>project work utilizing js and jQuery</p>
+                    </div>
                 </div>
-                <div class="col-lg-10">
-                    <p>
-                        Having been born and raised in El Paso, Texas, I grew to love the desert air and plant life. Moving to Austin, afforded me the opportunity to expand my horizons, learn how to swim, and enjoy the Texas Hill Country. I think Austin will always be &#8220;home&#8221; for me.
-                    </p>
-                    <p>
-                        I left El Paso to attend the University of Texas at Austin where I majored in Advertising. I have always enjoyed art, design, architecture, and typography. Having exposure and the ability to work in these arenas has been satisfying. I spent over ten years working in Educational Publishing in collaboration with Editorial and Design teams. As such, I have extensive experience with content and digital management systems.
-                    </p>
-                    <p>
-                        In recent years, I have moved into software development and specifically in a Business Analyst role. I have worked on top-notch projects involving such national clients as: Cengage Learning, Houghton Mifflin Harcourt, Taylor & Francis, NIKE, Copyright Clearance Center, and Shire Pharmaceuticals. My journey now takes me to the land of web development where I intend to utilize my past experiences and hone my craft.
-                    </p>
+
+                <div class="carousel-item" id="homework2">
+                    <img class="d-block w-100" src="./assets/images/trivia-game.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Shaken Not Stirred – Trivia Game</h5>
+                        <p>project work utilizing js and jQuery</p>
+                    </div>
                 </div>
+
+                <a class="carousel-control-prev" href="#carouselPortfolio" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselPortfolio" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
+    </div>
         <!-- End of Main Text container -->
 
-        <!-- Footer -->
-        <div class="footer">
-            <p id="footer">Copyright &#169; 2019</p>
-        </div>
-        <!-- End of Footer Section -->
+    <!-- Footer -->
+    <div class="footer">
+        <p id="footer">Copyright &#169; 2019</p>
+    </div>
+    <!-- End of Footer Section -->
 
-        
-        <!-- jQuery and JS code for Bootstrap-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- jQuery link -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/84e2c4562c.js"></script>
+
     </body>
 </html>
